@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* width lower than 640px */
+html {
+  font-size: 43.75%;
+}
+
+/* width more than 640px (sm) */
+@media only screen and (min-width: 40em) {
+  html {
+    font-size: 46.875%;
+  }
+}
+
+/* width more than 768px (md) */
+@media only screen and (min-width: 48em) {
+  html {
+    font-size: 50%;
+  }
+  header,
+  main,
+  footer {
+    padding: 1.75rem 2rem;
+  }
+}
+
+/* width more than 1024px (lg) */
+@media only screen and (min-width: 64em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/* width more than 1280px (xl) */
+@media only screen and (min-width: 80em) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+/* width more than 1536px (2xl) */
+@media only screen and (min-width: 96em) {
+  html {
+    font-size: 71.875%;
+  }
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+#root {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 8rem 1fr 5rem;
+  grid-template-columns: 1fr;
+}
+
+header,
+main,
+footer {
+  padding: 1.75rem 2rem;
+}
+
+@media only screen and (min-width: 48em) {
+  header,
+  main,
+  footer {
+    padding: 1.5rem 4rem;
+  }
+}
