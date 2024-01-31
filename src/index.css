@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* on lg: 1rem = 10px */
+html {
+  @apply text-[47%] sm:text-[51.25%] md:text-[56.25%] lg:text-[62.5%] xl:text-[72.5%];
+}
+
+@layer base {
+  .layout {
+    display: grid;
+    grid-template-rows: 6rem 1fr; /* adjust freely */
+  }
+}
