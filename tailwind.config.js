@@ -2,17 +2,6 @@
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {
-      height: {
-        screen: '100dvh',
-      },
-      minHeight: {
-        screen: '100dvh',
-      },
-      maxHeight: {
-        screen: '100dvh',
-      },
-    },
     screens: {
       //breakpoints
       sm: '37.5em',
@@ -31,6 +20,17 @@ export default {
       '3xl': ['2.8rem', '1'],
       '4xl': ['3.2rem', '1'],
       '5xl': ['3.68rem', '1'],
+    },
+    extend: {
+      height: {
+        screen: '100dvh',
+      },
+      minHeight: {
+        screen: '100dvh',
+      },
+      maxHeight: {
+        screen: '100dvh',
+      },
     },
   },
   plugins: [],

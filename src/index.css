@@ -7,6 +7,10 @@ html {
   @apply text-[47%] sm:text-[51.25%] md:text-[56.25%] lg:text-[62.5%] xl:text-[72.5%];
 }
 
+body {
+  @apply text-base text-neutral-800;
+}
+
 @layer base {
   .layout {
     display: grid;
